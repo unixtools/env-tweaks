@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+
+if ( -d "/etc/vim" ) {
+    system( "cp", "/etc/env-tweaks/vimrc", "/etc/vim/vimrc" );
+}
+else {
+    system( "cp", "/etc/env-tweaks/vimrc", "/etc/vimrc" );
+}
+
