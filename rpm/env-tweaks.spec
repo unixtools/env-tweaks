@@ -27,14 +27,20 @@ make DESTDIR=$RPM_BUILD_ROOT
 cd env-tweaks-%{version}
 make DESTDIR=$RPM_BUILD_ROOT install
 
-#mkdir -p $RPM_BUILD_ROOT/etc/profile.d
-#cp -pr env-tweaks.sh $RPM_BUILD_ROOT/etc/profile.d/
+%post
+
+/etc/env-tweaks/setup-env-tweaks
 
 %clean
 %{__rm} -rf %{buildroot}
 
 %files
 
-#%attr(0644, root, root) /etc/profile.d/env-tweaks.sh
+%attr(0755, root, root) /etc/env-tweaks/setup-env-tweaks
+
+/etc/env-tweaks/indent.pro
+/etc/env-tweaks/perltidyrc
+/etc/env-tweaks/vimrc
+
 
 %changelog

@@ -4,8 +4,9 @@ TOP=`pwd`
 all:
 
 install:
-	mkdir -p $(DESTDIR)/etc/profile.d
-	cp env-tweaks.sh $(DESTDIR)/etc/profile.d/env-tweaks.sh
+	mkdir -p $(DESTDIR)/etc/env-tweaks
+	cp files/* $(DESTDIR)/etc/env-tweaks/
+	chmod 755 $(DESTDIR)/etc/env-tweaks/setup-env-tweaks
 
 dist:
 	rm -rf /tmp/env-tweaks-$(VERSION)

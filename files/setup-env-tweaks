@@ -7,3 +7,5 @@ else {
     system( "cp", "/etc/env-tweaks/vimrc", "/etc/vimrc" );
 }
 
+system( "cp", "/etc/env-tweaks/perltidyrc", "/etc/perltidyrc" );
+system( "cp", "/etc/env-tweaks/indent.pro", "/root/.indent.pro" );
