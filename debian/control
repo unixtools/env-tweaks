@@ -1,0 +1,12 @@
+Priority: optional
+Maintainer: Nathan Neulinger <nneul@neulinger.org>
+Source: env-tweaks
+Build-Depends: debhelper (>= 8)
+Standards-Version: 3.9.1
+Homepage: 
+
+Package: env-tweaks
+Section: utils
+Architecture: all
+Description: This contains the env-tweaks files and install/setup scripts
+
