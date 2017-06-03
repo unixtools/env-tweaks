@@ -71,7 +71,8 @@ set showcmd " display incomplete commands
 set incsearch " incremental searching
 set showmatch
 
-set textwidth=120
+" disable this - it autowraps which is really annoying on some files
+"set textwidth=120
 "Wrap at this column
 
 set backspace=indent,eol,start
